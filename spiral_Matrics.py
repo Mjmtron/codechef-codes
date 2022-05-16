@@ -1,21 +1,11 @@
-#defineing matrix
-m2=[[0,0],[0,0]]
-m3=[[0,0,0],[0,0,0],[0,0,0]]
-m4=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
-m5=[[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
+import numpy as np
 #taking input of number of rows in square matrix
-row=int(input("enter row of ■ matrix range(2,5):	"))
-#finalizing matrix size
-if row==2:
-	M=m2
-elif row==3:
-	M=m3
-elif row==4:
-	M=m4
-elif row==5:
-	M=m5
-else:
-	print("out of range")
+
+row=int(input("enter row of ■ matrix :	"))
+
+#defineing matrix
+
+M=np.zeros((row,row))
 
 #defineing pointers
 top,right,base,left=0,len(M[0]),len(M),0	
